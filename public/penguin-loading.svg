@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes waddle {
+      0% { transform: rotate(-5deg) translateY(0); }
+      25% { transform: rotate(0deg) translateY(-3px); }
+      50% { transform: rotate(5deg) translateY(0); }
+      75% { transform: rotate(0deg) translateY(-3px); }
+      100% { transform: rotate(-5deg) translateY(0); }
+    }
+    .penguin {
+      animation: waddle 1.5s infinite ease-in-out;
+      transform-origin: center bottom;
+      transform-box: fill-box;
+    }
+    @keyframes blink {
+      0%, 45%, 55%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(0.1); }
+    }
+    .eye {
+      animation: blink 3s infinite ease-in-out;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  </style>
+  
+  <g class="penguin">
+    <!-- Body -->
+    <ellipse cx="50" cy="60" rx="25" ry="30" fill="#333333"/>
+    
+    <!-- Belly -->
+    <ellipse cx="50" cy="65" rx="20" ry="22" fill="#FEFAE0"/>
+    
+    <!-- Head -->
+    <circle cx="50" cy="35" r="20" fill="#333333"/>
+    
+    <!-- Eyes -->
+    <g class="eye">
+      <circle cx="42" cy="30" r="4" fill="#FEFAE0"/>
+      <circle cx="42" cy="30" r="2" fill="#333333"/>
+      <circle cx="40" cy="28" r="1" fill="#FFFFFF"/>
+    </g>
+    <g class="eye">
+      <circle cx="58" cy="30" r="4" fill="#FEFAE0"/>
+      <circle cx="58" cy="30" r="2" fill="#333333"/>
+      <circle cx="56" cy="28" r="1" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Beak -->
+    <path d="M47,35 L53,35 L50,40 Z" fill="#D4A373"/>
+    
+    <!-- Wings -->
+    <path d="M30,50 Q25,60 30,70" stroke="#333333" stroke-width="7" fill="none"/>
+    <path d="M70,50 Q75,60 70,70" stroke="#333333" stroke-width="7" fill="none"/>
+    
+    <!-- Feet -->
+    <path d="M42,87 L37,93 L47,93 Z" fill="#D4A373"/>
+    <path d="M58,87 L53,93 L63,93 Z" fill="#D4A373"/>
+    
+    <!-- Blush -->
+    <circle cx="37" cy="35" r="4" fill="#FAEDCD" opacity="0.7"/>
+    <circle cx="63" cy="35" r="4" fill="#FAEDCD" opacity="0.7"/>
+  </g>
+  
+  <!-- Loading dots -->
+  <g>
+    <circle cx="30" cy="95" r="3" fill="#556B2F">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="95" r="3" fill="#556B2F">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="95" r="3" fill="#556B2F">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg> 

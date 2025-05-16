@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="50" ry="60" fill="#333333"/>
+  
+  <!-- Belly -->
+  <ellipse cx="100" cy="130" rx="40" ry="45" fill="#FEFAE0"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="70" r="40" fill="#333333"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="60" r="8" fill="#FEFAE0"/>
+  <circle cx="115" cy="60" r="8" fill="#FEFAE0"/>
+  <circle cx="85" cy="60" r="4" fill="#333333"/>
+  <circle cx="115" cy="60" r="4" fill="#333333"/>
+  
+  <!-- Shine in eyes -->
+  <circle cx="82" cy="57" r="2" fill="#FFFFFF"/>
+  <circle cx="112" cy="57" r="2" fill="#FFFFFF"/>
+  
+  <!-- Eyebrows - slightly raised for curious look -->
+  <path d="M78,50 Q85,47 92,50" stroke="#333333" stroke-width="2" fill="none"/>
+  <path d="M108,50 Q115,47 122,50" stroke="#333333" stroke-width="2" fill="none"/>
+  
+  <!-- Beak -->
+  <path d="M95,70 L105,70 L100,80 Z" fill="#D4A373"/>
+  
+  <!-- Smile -->
+  <path d="M90,85 Q100,92 110,85" stroke="#333333" stroke-width="2" fill="none"/>
+  
+  <!-- Bow tie -->
+  <path d="M85,95 L115,95 L100,105 Z" fill="#556B2F"/>
+  <path d="M85,95 L115,95 L100,85 Z" fill="#556B2F"/>
+  <circle cx="100" cy="95" r="5" fill="#8B5E3B"/>
+  
+  <!-- Wings -->
+  <path d="M60,100 Q50,120 60,140" stroke="#333333" stroke-width="15" fill="none"/>
+  <path d="M140,100 Q150,120 140,140" stroke="#333333" stroke-width="15" fill="none"/>
+  
+  <!-- Feet -->
+  <path d="M85,175 L75,185 L95,185 Z" fill="#D4A373"/>
+  <path d="M115,175 L105,185 L125,185 Z" fill="#D4A373"/>
+  
+  <!-- Blush -->
+  <circle cx="75" cy="70" r="8" fill="#FAEDCD" opacity="0.7"/>
+  <circle cx="125" cy="70" r="8" fill="#FAEDCD" opacity="0.7"/>
+  
+  <!-- Sparkles around the penguin -->
+  <path d="M45,40 L50,45 L45,50 L40,45 Z" fill="#556B2F" opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 45 45" to="360 45 45" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M150,30 L155,35 L150,40 L145,35 Z" fill="#8B5E3B" opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" from="0 150 35" to="360 150 35" dur="7s" repeatCount="indefinite"/>
+  </path>
+</svg> 
